@@ -21,12 +21,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'apps',
-    'teacher',
-    'mathfilters',
-    'sorl.thumbnail',
-    'django.contrib.humanize',
-    'ckeditor',
-    'mptt',
+
 
 
 ]
@@ -63,7 +58,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'roots.wsgi.application'
+WSGI_APPLICATION = 'root.wsgi.application'
 
 
 DATABASES = {
@@ -108,30 +103,7 @@ MEDIA_ROOT = join(BASE_DIR,'media')
 CKEDITOR_UPLOAD_PATH = 'uploads/'
 CKEDITOR_IMAGE_BACKEND = "pillow"
 
+
+
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-JAZZMIN_SETTINGS = {
-    "site_title": "Library Admin",
 
-    "site_header": "Library",
-
-    "site_brand": "Alijahon",
-
-    "site_logo": "apps/app/logo_site.png",
-
-    "login_logo": None,
-
-    "login_logo_dark": None,
-
-    "site_logo_classes": "img-circle",
-
-    "site_icon": None,
-
-    "welcome_sign": "Welcome to the library",
-
-
-
-    "search_model": ["apps.User", "auth.Group"],
-
-
-
-}
