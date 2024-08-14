@@ -3,10 +3,9 @@ from django.urls import path
 
 from root import settings
 from . import views
+from .views import HomepageTemplateView
 
 urlpatterns = [
-    path('', views.my_view, name='home'),
+    path('', HomepageTemplateView.as_view(), name='home_page'),
 
-]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT) + static(settings.STATIC_URL,
-                                                                                         document_root=settings.STATIC_ROOT)
-
+]
