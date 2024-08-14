@@ -6,6 +6,21 @@ from . import views
 
 urlpatterns = [
     path('', views.my_view, name='home'),
+    path('magazin/', views.my_view, name='home'),
+    path('product/', views.my_view, name='home'),
+    path('', views.my_view, name='home'),
+    path('', views.my_view, name='home'),
+    path('', views.my_view, name='home'),
+    path('', views.my_view, name='home'),
+    path('', views.my_view, name='home'),
+    path('', views.my_view, name='home'),
+    path('', views.my_view, name='home'),
+    path('', views.my_view, name='home'),
+    path('', views.my_view, name='home'),
+    path('', views.my_view, name='home'),
+    path('', views.my_view, name='home'),
+    path('', views.my_view, name='home'),
+    path('', views.my_view, name='home'),
 
 ]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT) + static(settings.STATIC_URL,
                                                                                          document_root=settings.STATIC_ROOT)
