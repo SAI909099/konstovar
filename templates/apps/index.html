@@ -5797,8 +5797,9 @@
                 <div class="site-header__bottom">
                     <div class="site-header__bottom-left  logo-left">
                         <a href="https://markermarket.uz" class="site-logo">
-                            <img src="/thumb/2/qhvuTSuy3YBIcPpdDb56kg/140r/d/121639593_144741887367280_1516153974288837657_n.jpg"
-                                 alt="121639593_144741887367280_1516153974288837657_n.jpg" style="max-width:140px;">
+                            <img src={% static "apps/121639593_144741887367280_1516153974288837657_n.jpg" %}
+                                         alt="121639593_144741887367280_1516153974288837657_n.jpg"
+                                 style="max-width:140px;">
                         </a>
                         <div class="site-name">
                             <span class="site-name__desc">Магазин канцелярских товаров для школы и офиса</span>
@@ -5828,14 +5829,14 @@
                                         <div class="top_massager">
                                             <a href="" class="contacts-phones__link">
                                                 <img width="28" height="28"
-                                                     src="/thumb/2/UMSxDoyMHNhfoWma1ab7NQ/28c28/d/fgs16_whatsapp.svg"
-                                                     data-src="/thumb/2/UMSxDoyMHNhfoWma1ab7NQ/28c28/d/fgs16_whatsapp.svg"
+                                                     src={% static "apps/fgs16_whatsapp.svg" %}
+                                                             data-src="/thumb/2/UMSxDoyMHNhfoWma1ab7NQ/28c28/d/fgs16_whatsapp.svg"
                                                      class="" alt="Whatsapp" title="Whatsapp">
                                             </a>
                                             <a href="https://t.me/markermarket" class="contacts-phones__link">
                                                 <img width="28" height="28"
-                                                     src="/thumb/2/fsn7QZgB3BYMWNKG85ONxA/28c28/d/fgs16_telegram.svg"
-                                                     data-src="/thumb/2/fsn7QZgB3BYMWNKG85ONxA/28c28/d/fgs16_telegram.svg"
+                                                     src={% static "apps/fgs16_telegram.svg" %}
+                                                             data-src="/thumb/2/fsn7QZgB3BYMWNKG85ONxA/28c28/d/fgs16_telegram.svg"
                                                      class="" alt="Telegram" title="Telegram">
                                             </a>
                                         </div>
@@ -7165,7 +7166,8 @@
                     <div class="product-list-titles">
                         <div class="product-list-titles__item">Товар</div>
                         <div class="product-list-titles__item">Цена</div>
-                        <div class="product-list-titles__item">Кол-во</div</div>
+                        <div class="product-list-titles__item">Кол-во</div>
+                    </div>
 
                     <div class="product-list list" data-autoplay="1"
                          data-popup-form="/my/s3/xapi/public/?method=form/postform&amp;param[form_id]=21634105&amp;param[tpl]=global:shop2.form.minimal.tpl&amp;param[hide_title]=0&amp;param[placeholdered_fields]=0"
@@ -7186,7 +7188,7 @@
 
                                     <div class="gr-product-image gr_image_1x1">
                                         <a href="/magazin/product/skotch-12h20u-deli">
-                                            <img src="/thumb/2/aqovxqdw2A10Ny5Aho0aCg/450r450/d/2e30014.png"
+                                            <img src="{% static 'apps/2e30014.png' %}"
                                                  data-src="/thumb/2/aqovxqdw2A10Ny5Aho0aCg/450r450/d/2e30014.png"
                                                  class="" alt="Скотч 12х20у Deli" title="Скотч 12х20у Deli">
 
@@ -7390,8 +7392,8 @@
 
                                     <div class="gr-product-image gr_image_1x1">
                                         <a href="/magazin/product/lastik-berlingo-animals-pryamougolnyj-termoplastichnaya-rezina-28-18-10mm">
-                                            <img src="/thumb/2/QqRlfELsnJjjFSfZGY2xqg/450r450/d/28768a611.jpg"
-                                                 data-src="/thumb/2/QqRlfELsnJjjFSfZGY2xqg/450r450/d/28768a611.jpg"
+                                            <img src={% static  "apps/28768a611.jpg" %}
+                                                         data-src="/thumb/2/QqRlfELsnJjjFSfZGY2xqg/450r450/d/28768a611.jpg"
                                                  class=""
                                                  alt="Ластик Berlingo &quot;Animals&quot;, прямоугольный, термопластичная резина, 28*18*10мм"
                                                  title="Ластик Berlingo &quot;Animals&quot;, прямоугольный, термопластичная резина, 28*18*10мм">
@@ -10987,7 +10989,8 @@
                              height="50" class="gr_images_lazy_load" alt="CLICK" title="CLICK">
                     </a>
                     <a href="https://humocard.uz/ru/" class="about_payment__item">
-                        <img src="{% static 'apps/spacer.gif' %}" data-src="/thumb/2/KQHpppC6yZ_2xPzc5h3ibA/100r75/d/humo-01.jpg"
+                        <img src="{% static 'apps/spacer.gif' %}"
+                             data-src="/thumb/2/KQHpppC6yZ_2xPzc5h3ibA/100r75/d/humo-01.jpg"
                              width="75" height="50" class="gr_images_lazy_load" alt="Humo" title="Humo">
                     </a>
                     <a href="https://www.uzcard.uz/ru" class="about_payment__item">
@@ -10996,11 +10999,13 @@
                              height="50" class="gr_images_lazy_load" alt="Uzcard" title="Uzcard">
                     </a>
                     <a href="https://www.visa.com/" class="about_payment__item">
-                        <img src="{% static 'apps/spacer.gif' %}" data-src="/thumb/2/sjt_WmovpdRZYzfghWE2ow/100r75/d/visa3.png"
+                        <img src="{% static 'apps/spacer.gif' %}"
+                             data-src="/thumb/2/sjt_WmovpdRZYzfghWE2ow/100r75/d/visa3.png"
                              width="75" height="50" class="gr_images_lazy_load" alt="Visa" title="Visa">
                     </a>
                     <a href="https://www.mastercard.ru" class="about_payment__item">
-                        <img src="{% static 'apps/spacer.gif' %}" data-src="/thumb/2/pNgCk3Fn5UpR561KyhbCpw/100r75/d/m-card-3.png"
+                        <img src="{% static 'apps/spacer.gif' %}"
+                             data-src="/thumb/2/pNgCk3Fn5UpR561KyhbCpw/100r75/d/m-card-3.png"
                              width="75" height="50" class="gr_images_lazy_load" alt="Mastercard" title="Mastercard">
                     </a>
                 </div>
@@ -11118,11 +11123,13 @@
     </div>
     <div class="footer-info__social-body">
         <a href="https://www.facebook.com/kanctovary.tashkent">
-            <img src="{% static 'apps/spacer.gif' %}" data-src="/thumb/2/04tXjq7M7D9X8rH-2M88oQ/34r34/d/fgs16_facebook_11.svg" width="34"
+            <img src="{% static 'apps/spacer.gif' %}"
+                 data-src="/thumb/2/04tXjq7M7D9X8rH-2M88oQ/34r34/d/fgs16_facebook_11.svg" width="34"
                  height="34" class="gr_images_lazy_load" alt="Facebook" title="Facebook">
         </a>
         <a href="https://www.instagram.com/kanctovary.tashkent/">
-            <img src="{% static 'apps/spacer.gif' %}" data-src="/thumb/2/HQ1YmZcrU1l_GXVKbZhAtA/34r34/d/fgs16_instagram_0.svg" width="34"
+            <img src="{% static 'apps/spacer.gif' %}"
+                 data-src="/thumb/2/HQ1YmZcrU1l_GXVKbZhAtA/34r34/d/fgs16_instagram_0.svg" width="34"
                  height="34" class="gr_images_lazy_load" alt="Инстаграм" title="Инстаграм">
         </a>
         <a href="https://t.me/mmarket54">
