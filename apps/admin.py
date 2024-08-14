@@ -1,13 +1,20 @@
-from django.contrib import admin
-from django.contrib.admin import ModelAdmin, register
+from django.contrib.admin import ModelAdmin, register, StackedInline
+from mptt.admin import DraggableMPTTAdmin
 
-from apps.models import Product
+from apps.models import Product, ProductImage, Category
 
 
+@register(Category)
+class CategoryModelAdmin(DraggableMPTTAdmin):
+    pass
+
+
+class ProductImageStackedInline(StackedInline):
+    model = ProductImage
+    extra = 1
+    min_num = 0
+    max_num = 5
 @register(Product)
 class ProductModelAdmin(ModelAdmin):
     list_display = ('id', 'name', 'category_id')
-
-
-    def parent_category(self, obj):
-        return obj.category_id.parent_id if obj.category_id and obj.category_id.parent_id else None
+    inlines = [ProductImageStackedInline]

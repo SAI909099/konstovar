@@ -23,7 +23,7 @@ class User(AbstractUser):
 class Category(MPTTModel):
     name = CharField(max_length=225, default="Default Category Name")
     slug = SlugField(max_length=225, null=True, blank=True)
-    parent_id = TreeForeignKey('self', CASCADE, null=True, blank=True, related_name='children')  # Renamed to 'parent'
+    parent = TreeForeignKey('self', CASCADE, null=True, blank=True, related_name='children')  # Renamed to 'parent'
 
     class MPTTMeta:
         order_insertion_by = ['name']
