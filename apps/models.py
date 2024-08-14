@@ -5,6 +5,7 @@ from django.db.models import Model, CharField, DateTimeField, CASCADE, \
     UUIDField, EmailField, IntegerField, SlugField, DecimalField, PositiveIntegerField, TextField, ForeignKey, \
     ManyToManyField, ImageField, TextChoices
 from django.utils.text import slugify
+from django_ckeditor_5.fields import CKEditor5Field
 from mptt.models import MPTTModel, TreeForeignKey
 
 
@@ -74,7 +75,7 @@ class Category(BaseSlugModel, MPTTModel):
 class Product(BaseSlugModel, Base):
     price = DecimalField(max_digits=7, decimal_places=2)
     quantity = PositiveIntegerField(default=0)
-    description = TextField()
+    description = CKEditor5Field()
     category = ForeignKey('apps.Category', CASCADE)
     tags = ManyToManyField('apps.Tag', related_name='tag')
 
