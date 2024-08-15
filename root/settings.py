@@ -1,7 +1,6 @@
 from os.path import join
 from pathlib import Path
 
-
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 SECRET_KEY = 'django-insecure-rg-@di2g=q^da11am%j0o@pl-ho4$_lk-w19qpmmya*tdo#okv'
@@ -10,11 +9,10 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
-
 # Application definition
 
 INSTALLED_APPS = [
-    'jazzmin',
+
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -25,6 +23,7 @@ INSTALLED_APPS = [
     'mptt',
 
     'django_ckeditor_5',
+
 
 ]
 AUTH_USER_MODEL = 'apps.User'
@@ -62,14 +61,12 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'root.wsgi.application'
 
-
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
-
 
 AUTH_PASSWORD_VALIDATORS = [
     {
@@ -86,7 +83,6 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-
 LANGUAGE_CODE = 'en-us'
 
 TIME_ZONE = 'Asia/Tashkent'
@@ -95,17 +91,14 @@ USE_I18N = True
 
 USE_TZ = True
 
-
 STATIC_URL = 'static/'
-STATIC_ROOT = join(BASE_DIR,'static')
+STATIC_ROOT = join(BASE_DIR, 'static')
 
 MEDIA_URL = 'media/'
-MEDIA_ROOT = join(BASE_DIR,'media')
+MEDIA_ROOT = join(BASE_DIR, 'media')
 
 CKEDITOR_UPLOAD_PATH = 'uploads/'
 CKEDITOR_IMAGE_BACKEND = "pillow"
-
-
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
