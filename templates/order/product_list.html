@@ -1,0 +1,198 @@
+{% load thumbnail %}
+{% for product in products %}
+<form method="post" action="/magazin?mode=cart&amp;action=add" accept-charset="utf-8"
+      class="shop2-product-item product-item">
+
+    <input type="hidden" name="kind_id" value="109590002">
+    <input type="hidden" name="product_id" value="96808202">
+    <input type="hidden" name="meta" value="null">
+
+    <div class="product-item__inner">
+
+        <div class="product-item__top">
+
+            <div class="gr-product-image gr_image_1x1">
+                <a href="{% url 'product_detail' product.slug %}">
+                    <img src="{% thumbnail product.images.image.first.image "366x250" format="PNG" as im %} {% endthumbnail %}"
+                         data-src="/thumb/2/O6O3dqnArPRhxk3IvhaPSA/450r450/d/shvejcarskie_alpy_2.jpg" class=""
+                         alt="Air Wick Аэрозоль-освежитель воздуха Швейцарские Альпы Утренняя роса и Зеленый лес, 290 мл"
+                         title="Air Wick Аэрозоль-освежитель воздуха Швейцарские Альпы Утренняя роса и Зеленый лес, 290 мл">
+
+                </a>
+                <div class="quick-view-trigger" data-tooltip="Быстрый просмотр"
+                     data-url="/magazin/product/air-wick-aerozol-osvezhitel-vozduha-shvejcarskie-alpy-utrennyaya-rosa-i-zelenyj-les-290-ml">
+                        <span>
+                            Быстрый просмотр
+                            <i>
+                            	<svg class="gr-svg-icon">
+	                                <use xlink:href="#icon_shop_preview"></use>
+	                            </svg>
+	                            <svg class="gr-svg-icon gr_small_icon">
+	                                <use xlink:href="#icon_shop_preview_small"></use>
+	                            </svg>
+                            </i>
+                        </span>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="product-item__bottom">
+            <div class="product-item__bottom-left">
+
+                <div class="gr-product-name">
+                    <a href="{% url 'product_detail' product.slug %}">
+                        {{ product.name }}</a>
+                </div>
+
+                <div class="gr-vendor-block">
+                    {% for category in categories %}
+                        <a href="/magazin/vendor/airwick">{{ category.name }}</a>
+                    {% endfor %}
+                </div>
+
+
+                <div class="tpl-stars">
+                    <div class="tpl-rating" style="width: 0%;"></div>
+                </div>
+
+
+                <div class="product-article"><span>Артикул:</span> нет</div>
+
+
+                <div class="gr-product-anonce">
+                    {{ product.name }}
+                </div>
+
+
+            </div>
+
+            <div class="product-item__bottom-right">
+
+                <div class="product-additional">
+                    <div class="product-additional__top">
+                        <div class="product-additional__top-left">
+                            <div class="gr-amount-flag has_amount">
+                                <span>В наличии <ins>{{ product.quantity }}</ins></span>
+                            </div>
+
+                            <div class="product-price">
+
+                                <div class="price-current">
+                                    <strong>{{ product.price }}</strong>
+                                    <span>сўм</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-additional__top-right">
+                            <div class="product-item-btns">
+
+
+                                <div class="product-amount">
+                                    <div class="amount-title">Количество<span>:</span></div>
+                                    <div class="shop2-product-amount">
+                                        <button type="button" class="amount-minus" disabled="disabled">
+                                            <svg class="gr-svg-icon">
+                                                <use xlink:href="#icon_shop_minus"></use>
+                                            </svg>
+                                            <svg class="gr-svg-icon gr_small_icon">
+                                                <use xlink:href="#icon_shop_minus_small"></use>
+                                            </svg>
+                                        </button>
+                                        <input type="text" name="amount" data-kind="109590002" data-min="1"
+                                               data-multiplicity="" maxlength="4" value="1">
+                                        <button type="button" class="amount-plus">
+                                            <svg class="gr-svg-icon">
+                                                <use xlink:href="#icon_shop_plus"></use>
+                                            </svg>
+                                            <svg class="gr-svg-icon gr_small_icon">
+                                                <use xlink:href="#icon_shop_plus_small"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+
+
+                                <button class="shop-product-btn type-2 buy" type="submit"
+                                        data-url="/magazin/product/air-wick-aerozol-osvezhitel-vozduha-shvejcarskie-alpy-utrennyaya-rosa-i-zelenyj-les-290-ml"><span>В корзину<i>
+						<svg class="gr-svg-icon gr_big_icon">
+						    <use xlink:href="#icon_shop_cart_add_big"></use>
+						</svg>
+						<svg class="gr-svg-icon">
+						    <use xlink:href="#icon_shop_cart_add"></use>
+						</svg>
+						<svg class="gr-svg-icon gr_small_icon">
+						    <use xlink:href="#icon_shop_cart_add_small"></use>
+						</svg>
+					</i>
+							</span>
+                                </button>
+
+                                <input type="hidden"
+                                       value="Air Wick Аэрозоль-освежитель воздуха Швейцарские Альпы Утренняя роса и Зеленый лес, 290 мл"
+                                       name="product_name" data-product-folder-id="144249905">
+                                <input type="hidden"
+                                       value="https://markermarket.uz/magazin/product/air-wick-aerozol-osvezhitel-vozduha-shvejcarskie-alpy-utrennyaya-rosa-i-zelenyj-les-290-ml"
+                                       name="product_link">
+                                <div class="clear">&nbsp;</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-additional__bottom">
+                        <div class="buy-one-click buy_one_click" data-remodal-target="buy-one-click"
+                             data-product-link="https://markermarket.uz/magazin/product/air-wick-aerozol-osvezhitel-vozduha-shvejcarskie-alpy-utrennyaya-rosa-i-zelenyj-les-290-ml"
+                             data-product-name="Air Wick Аэрозоль-освежитель воздуха Швейцарские Альпы Утренняя роса и Зеленый лес, 290 мл"
+                             data-api-url="/my/s3/xapi/public/?method=form/postform&amp;param[form_id]=21634105&amp;param[tpl]=global:shop2.form.minimal.tpl&amp;param[hide_title]=0&amp;param[placeholdered_fields]=0">
+                            Купить в 1 клик
+                        </div>
+
+                        <div class="product-additional__add">
+
+                            <div class="product-compare">
+                                <label class="gr-compare-plus">
+                                    <svg class="gr-svg-icon">
+                                        <use xlink:href="#icon_shop_compare_add"></use>
+                                    </svg>
+                                    <svg class="gr-svg-icon gr_small_icon">
+                                        <use xlink:href="#icon_shop_compare_add_small"></use>
+                                    </svg>
+                                    <input type="checkbox" value="109590002">
+                                    К сравнению
+                                </label>
+                            </div>
+
+                            <div class="gr-favorite-btn-wrapper">
+                                <label class="gr-favorite-btn">
+			<span class="gr-favorite-btn__icon">
+				<i class="gr-favorite-btn__add">
+					<svg class="gr-svg-icon">
+					    <use xlink:href="#icon_shop_favorite_add"></use>
+					</svg>
+					<svg class="gr-svg-icon gr_small_icon">
+					    <use xlink:href="#icon_shop_favorite_add_small"></use>
+					</svg>
+				</i>
+				<i class="gr-favorite-btn__added">
+					<svg class="gr-svg-icon">
+					    <use xlink:href="#icon_shop_favorite_added"></use>
+					</svg>
+					<svg class="gr-svg-icon gr_small_icon">
+					    <use xlink:href="#icon_shop_favorite_added_small"></use>
+					</svg>
+				</i>
+			</span>
+                                    <span class="gr-favorite-btn__text">В избранное</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+    </div>
+
+</form>
+{% endfor %}

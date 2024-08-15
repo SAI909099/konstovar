@@ -19,9 +19,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'sorl.thumbnail',
     'apps',
     'mptt',
-
+    'humanize',
     'django_ckeditor_5',
 
 
