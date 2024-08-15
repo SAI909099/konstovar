@@ -66,6 +66,7 @@ class User(AbstractUser):
 
 
 class Category(BaseSlugModel, MPTTModel):
+    name = CharField(max_length=255)
     parent = TreeForeignKey('self', on_delete=CASCADE, null=True, blank=True, related_name='children')
 
     def __str__(self):
@@ -73,6 +74,7 @@ class Category(BaseSlugModel, MPTTModel):
 
 
 class Product(BaseSlugModel, Base):
+    name = CharField(max_length=255)
     price = DecimalField(max_digits=7, decimal_places=2)
     quantity = PositiveIntegerField(default=0)
     description = CKEditor5Field()
