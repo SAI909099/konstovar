@@ -6,7 +6,7 @@ from apps.models import Product, Category, Tag, ImageProduct
 
 @register(Category)
 class CategoryModelAdmin(DraggableMPTTAdmin):
-    pass
+    exclude = 'slug',
 
 
 class ProductImageStackedInline(StackedInline):
