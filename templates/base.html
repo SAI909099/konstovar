@@ -5752,11 +5752,11 @@
                         <ul class="menu-top__inner">
                             <li class="has active opened"><a href="/">Главная</a>
                             </li>
-                            <li class="has"><a href="/o-kompanii">О компании</a>
+                            <li class="has"><a href="{% url 'o-kompany' %}">О компании</a>
                                 <ul>
-                                    <li class=""><a href="/kontakty">Контакты</a>
+                                    <li class=""><a href="{% url 'kontakt' %}">Контакты</a>
                                     </li>
-                                    <li class=""><a href="/proizvoditeli">Производители</a>
+                                    <li class=""><a href="{% url 'proizvaditeli' %}">Производители</a>
                                     </li>
                                 </ul>
                             </li>
@@ -5862,8 +5862,8 @@
     </header>
 
    {% block content %}
-       
-    {% endblock %}
+
+   {% endblock %}
 
 
     <footer class="site-footer">

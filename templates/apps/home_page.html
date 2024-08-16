@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 
 {% load static %}
-
+{% load mptt_tags %}
 {% block content %}
     <div class="site-container__inner block_width">
         <div class="main-top">
@@ -91,10 +91,12 @@
         <div class="left-bar">
             <div class="category-menu">
                 <ul class="cat-menu category-menu__inner">
-                    <li data-f-name="Бумага и бумажная продукция" class="firstlevel sublevel"><a class="hasArrow"
-                                                                                                 href="/magazin/bumaga-i-bumazhnaya-produkciya"><span
-                            class="arrow"></span><span>Бумага и бумажная продукция</span><span
-                            class="open_ul_span"></span></a>
+{#                    {% recursetree categories %}#}
+{#                    <li data-f-name="/$" class="firstlevel sublevel"><a class="hasArrow"#}
+{#                                                                                                 href="/magazin/bumaga-i-bumazhnaya-produkciya"><span#}
+{#                            class="arrow"></span><span>Бумага и бумажная продукция</span><span#}
+{#                            class="open_ul_span"></span></a>#}
+{#                         {% endrecursetree %}#}
                         <ul>
                             <li class="parentItem"><a href="/magazin/bumaga-i-bumazhnaya-produkciya"><span>Бумага и бумажная продукция</span></a>
                             </li>
