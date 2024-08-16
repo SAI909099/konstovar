@@ -19,6 +19,9 @@ class CompanyContactsView(TemplateView):
 class ManufactureView(TemplateView):
     template_name = 'from_company/manufacturers.html'
 
+class DeliveryView(TemplateView):
+    template_name = 'delivery/deleveriy.html'
+
 class CategoryView(ListView):
     template_name = 'apps/category_product_list.html'
     model = Product
