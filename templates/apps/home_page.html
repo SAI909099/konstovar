@@ -72,7 +72,7 @@
                 </div>
                 <div class="main-top__cart-panel">
                     <div class="gr-cart-preview">
-                        <a href="/magazin/cart" class="gr-btn-1 gr-cart-popup-btn">
+                        <a href="{% url 'magazine_cart' %}" class="gr-btn-1 gr-cart-popup-btn">
                             <i>
                                 <svg class="gr-svg-icon">
                                     <use xlink:href="#icon_shop_cart_add"></use>
@@ -91,65 +91,65 @@
         <div class="left-bar">
             <div class="category-menu">
                 <ul class="cat-menu category-menu__inner">
-{#                    {% recursetree categories %}#}
-{#                    <li data-f-name="/$" class="firstlevel sublevel"><a class="hasArrow"#}
-{#                                                                                                 href="/magazin/bumaga-i-bumazhnaya-produkciya"><span#}
-{#                            class="arrow"></span><span>Бумага и бумажная продукция</span><span#}
-{#                            class="open_ul_span"></span></a>#}
-{#                         {% endrecursetree %}#}
-                        <ul>
-                            <li class="parentItem"><a href="/magazin/bumaga-i-bumazhnaya-produkciya"><span>Бумага и бумажная продукция</span></a>
-                            </li>
-                            <li data-f-name="Бумага офисная" class=""><a class=""
-                                                                         href="/magazin/bumaga-ofisnaya"><span
-                                    class="arrow"></span><span>Бумага офисная</span></a>
-                            </li>
-                            <li data-f-name="Стикеры" class=""><a class=""
-                                                                  href="/magazin/samokleyushchayasya-bumaga"><span
-                                    class="arrow"></span><span>Стикеры</span></a>
-                            </li>
-                            <li data-f-name="Тетради / Деловые журналы" class=""><a class=""
-                                                                                    href="/magazin/folder/tetradi-delovye-zhurnaly"><span
-                                    class="arrow"></span><span>Тетради / Деловые журналы</span></a>
-                            </li>
-                            <li data-f-name="Цветная бумага для печати" class=""><a class=""
-                                                                                    href="/magazin/cvetnaya-bumaga-dlya-pechati"><span
-                                    class="arrow"></span><span>Цветная бумага для печати</span></a>
-                            </li>
-                            <li data-f-name="Блокноты" class=""><a class="" href="/magazin/folder/1-1-3"><span
-                                    class="arrow"></span><span>Блокноты</span></a>
-                            </li>
-                            <li data-f-name="Бумага для заметок" class=""><a class=""
-                                                                             href="/magazin/bumaga-dlya-zametok"><span
-                                    class="arrow"></span><span>Бумага для заметок</span></a>
-                            </li>
-                            <li data-f-name="Ежедневники" class=""><a class="" href="/magazin/ezhednevniki"><span
-                                    class="arrow"></span><span>Ежедневники</span></a>
-                            </li>
-                            <li data-f-name="Бухгалтерские книги, бланки, формы" class=""><a class=""
-                                                                                             href="/magazin/buhgalterskie-knigi-blanki-formy"><span
-                                    class="arrow"></span><span>Бухгалтерские книги, бланки, формы</span></a>
-                            </li>
-                            <li data-f-name="Почтовые конверты" class=""><a class=""
-                                                                            href="/magazin/pochtovye-konverty"><span
-                                    class="arrow"></span><span>Почтовые конверты</span></a>
-                            </li>
-                            <li data-f-name="Чековая лента ,копировальная бумага" class=""><a class=""
-                                                                                              href="/magazin/chekovaya-lenta-kopirovalnaya-bumaga"><span
-                                    class="arrow"></span><span>Чековая лента ,копировальная бумага</span></a>
-                            </li>
-                            <li data-f-name="Календари и планинги" class=""><a class=""
-                                                                               href="/magazin/folder/1-1-12"><span
-                                    class="arrow"></span><span>Календари и планинги</span></a>
-                            </li>
-                            <li data-f-name="Фотобумага" class=""><a class="" href="/magazin/fotobumaga"><span
-                                    class="arrow"></span><span>Фотобумага</span></a>
-                            </li>
-                            <li data-f-name="Самоклеющаяся бумага" class=""><a class=""
-                                                                               href="/folder/samokleyushchayasya-bumaga"><span
-                                    class="arrow"></span><span>Самоклеющаяся бумага</span></a>
-                            </li>
-                        </ul>
+                    {#                    {% recursetree categories %}#}
+                    {#                    <li data-f-name="/$" class="firstlevel sublevel"><a class="hasArrow"#}
+                    {#                                                                                                 href="/magazin/bumaga-i-bumazhnaya-produkciya"><span#}
+                    {#                            class="arrow"></span><span>Бумага и бумажная продукция</span><span#}
+                    {#                            class="open_ul_span"></span></a>#}
+                    {#                         {% endrecursetree %}#}
+                    <ul>
+                        <li class="parentItem"><a href="/magazin/bumaga-i-bumazhnaya-produkciya"><span>Бумага и бумажная продукция</span></a>
+                        </li>
+                        <li data-f-name="Бумага офисная" class=""><a class=""
+                                                                     href="/magazin/bumaga-ofisnaya"><span
+                                class="arrow"></span><span>Бумага офисная</span></a>
+                        </li>
+                        <li data-f-name="Стикеры" class=""><a class=""
+                                                              href="/magazin/samokleyushchayasya-bumaga"><span
+                                class="arrow"></span><span>Стикеры</span></a>
+                        </li>
+                        <li data-f-name="Тетради / Деловые журналы" class=""><a class=""
+                                                                                href="/magazin/folder/tetradi-delovye-zhurnaly"><span
+                                class="arrow"></span><span>Тетради / Деловые журналы</span></a>
+                        </li>
+                        <li data-f-name="Цветная бумага для печати" class=""><a class=""
+                                                                                href="/magazin/cvetnaya-bumaga-dlya-pechati"><span
+                                class="arrow"></span><span>Цветная бумага для печати</span></a>
+                        </li>
+                        <li data-f-name="Блокноты" class=""><a class="" href="/magazin/folder/1-1-3"><span
+                                class="arrow"></span><span>Блокноты</span></a>
+                        </li>
+                        <li data-f-name="Бумага для заметок" class=""><a class=""
+                                                                         href="/magazin/bumaga-dlya-zametok"><span
+                                class="arrow"></span><span>Бумага для заметок</span></a>
+                        </li>
+                        <li data-f-name="Ежедневники" class=""><a class="" href="/magazin/ezhednevniki"><span
+                                class="arrow"></span><span>Ежедневники</span></a>
+                        </li>
+                        <li data-f-name="Бухгалтерские книги, бланки, формы" class=""><a class=""
+                                                                                         href="/magazin/buhgalterskie-knigi-blanki-formy"><span
+                                class="arrow"></span><span>Бухгалтерские книги, бланки, формы</span></a>
+                        </li>
+                        <li data-f-name="Почтовые конверты" class=""><a class=""
+                                                                        href="/magazin/pochtovye-konverty"><span
+                                class="arrow"></span><span>Почтовые конверты</span></a>
+                        </li>
+                        <li data-f-name="Чековая лента ,копировальная бумага" class=""><a class=""
+                                                                                          href="/magazin/chekovaya-lenta-kopirovalnaya-bumaga"><span
+                                class="arrow"></span><span>Чековая лента ,копировальная бумага</span></a>
+                        </li>
+                        <li data-f-name="Календари и планинги" class=""><a class=""
+                                                                           href="/magazin/folder/1-1-12"><span
+                                class="arrow"></span><span>Календари и планинги</span></a>
+                        </li>
+                        <li data-f-name="Фотобумага" class=""><a class="" href="/magazin/fotobumaga"><span
+                                class="arrow"></span><span>Фотобумага</span></a>
+                        </li>
+                        <li data-f-name="Самоклеющаяся бумага" class=""><a class=""
+                                                                           href="/folder/samokleyushchayasya-bumaga"><span
+                                class="arrow"></span><span>Самоклеющаяся бумага</span></a>
+                        </li>
+                    </ul>
                     </li>
                     <li data-f-name="Канцелярские товары" class="firstlevel sublevel"><a class="hasArrow"
                                                                                          href="/magazin/kancelyarskie-tovary"><span
@@ -2362,28 +2362,29 @@
                 >
 
 
-                    <form method="post" action="/magazin?mode=cart&amp;action=add" accept-charset="utf-8"
-                          class="shop2-product-item product-item">
+                    {% for product in products %}
+                        <form method="post" action="/magazin?mode=cart&amp;action=add" accept-charset="utf-8"
+                              class="shop2-product-item product-item">
 
-                        <input type="hidden" name="kind_id" value="109590002"/>
-                        <input type="hidden" name="product_id" value="96808202"/>
-                        <input type="hidden" name="meta" value="null"/>
+                            <input type="hidden" name="kind_id" value="109590002"/>
+                            <input type="hidden" name="product_id" value="96808202"/>
+                            <input type="hidden" name="meta" value="null"/>
 
-                        <div class="product-item__inner">
+                            <div class="product-item__inner">
 
-                            <div class="product-item__top">
+                                <div class="product-item__top">
 
-                                <div class="gr-product-image gr_image_1x1">
-                                    <a href="/magazin/product/air-wick-aerozol-osvezhitel-vozduha-shvejcarskie-alpy-utrennyaya-rosa-i-zelenyj-les-290-ml">
-                                        <img src="/g/spacer.gif"
-                                             data-src="/thumb/2/O6O3dqnArPRhxk3IvhaPSA/450r450/d/shvejcarskie_alpy_2.jpg"
-                                             class="gr_images_lazy_load"
-                                             alt="Air Wick Аэрозоль-освежитель воздуха Швейцарские Альпы Утренняя роса и Зеленый лес, 290 мл"
-                                             title="Air Wick Аэрозоль-освежитель воздуха Швейцарские Альпы Утренняя роса и Зеленый лес, 290 мл"/>
+                                    <div class="gr-product-image gr_image_1x1">
+                                        <a href="{% url 'product_detail' product.slug %}">
+                                            <img src="/g/spacer.gif"
+                                                 data-src="{{ product.images.first.image.url }}"
+                                                 class="gr_images_lazy_load"
+                                                 alt="Air Wick Аэрозоль-освежитель воздуха Швейцарские Альпы Утренняя роса и Зеленый лес, 290 мл"
+                                                 title="Air Wick Аэрозоль-освежитель воздуха Швейцарские Альпы Утренняя роса и Зеленый лес, 290 мл"/>
 
-                                    </a>
-                                    <div class="quick-view-trigger" data-tooltip="Быстрый просмотр"
-                                         data-url="/magazin/product/air-wick-aerozol-osvezhitel-vozduha-shvejcarskie-alpy-utrennyaya-rosa-i-zelenyj-les-290-ml">
+                                        </a>
+                                        <div class="quick-view-trigger" data-tooltip="Быстрый просмотр"
+                                             data-url="/magazin/product/air-wick-aerozol-osvezhitel-vozduha-shvejcarskie-alpy-utrennyaya-rosa-i-zelenyj-les-290-ml">
                         <span>
                             Быстрый просмотр
                             <i>
@@ -2395,93 +2396,95 @@
 	                            </svg>
                             </i>
                         </span>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
 
 
-                            <div class="product-item__bottom">
-                                <div class="product-item__bottom-left">
+                                <div class="product-item__bottom">
+                                    <div class="product-item__bottom-left">
 
-                                    <div class="gr-product-name">
-                                        <a href="/magazin/product/air-wick-aerozol-osvezhitel-vozduha-shvejcarskie-alpy-utrennyaya-rosa-i-zelenyj-les-290-ml">Air
-                                            Wick Аэрозоль-освежитель воздуха Швейцарские Альпы Утренняя роса и
-                                            Зеленый лес, 290 мл</a>
+                                        <div class="gr-product-name">
+                                            <a href="{% url 'product_detail' product.slug %}">
+                                                {{ product.name }}
+                                            </a>
+                                        </div>
+
+                                        <div class="gr-vendor-block">
+                                            <a href="/magazin/vendor/airwick">{{ product.category.name }}</a>
+                                        </div>
+
+
+                                        <div class="tpl-stars">
+                                            <div class="tpl-rating" style="width: 0%;"></div>
+                                        </div>
+
+
+                                        <div class="product-article"><span>Артикул:</span> нет</div>
+
+
+                                        <div class="gr-product-anonce">
+                                            {{ product.name }}
+                                        </div>
+
+
                                     </div>
 
-                                    <div class="gr-vendor-block">
-                                        <a href="/magazin/vendor/airwick">Airwick</a>
-                                    </div>
+                                    <div class="product-item__bottom-right">
 
-
-                                    <div class="tpl-stars">
-                                        <div class="tpl-rating" style="width: 0%;"></div>
-                                    </div>
-
-
-                                    <div class="product-article"><span>Артикул:</span> нет</div>
-
-
-                                    <div class="gr-product-anonce">
-                                        Air Wick Аэрозоль-освежитель воздуха Швейцарские Альпы Утренняя роса и
-                                        Зеленый лес, 290 мл
-                                    </div>
-
-
-                                </div>
-
-                                <div class="product-item__bottom-right">
-
-                                    <div class="product-additional">
-                                        <div class="product-additional__top">
-                                            <div class="product-additional__top-left">
-                                                <div class="gr-amount-flag has_amount">
-                                                    <span>В наличии <ins>1000000</ins></span>
-                                                </div>
-
-                                                <div class="product-price">
-
-                                                    <div class="price-current">
-                                                        <strong>33&nbsp;000</strong>
-                                                        <span>сўм</span>
+                                        <div class="product-additional">
+                                            <div class="product-additional__top">
+                                                <div class="product-additional__top-left">
+                                                    <div class="gr-amount-flag has_amount">
+                                                        <span>В наличии <ins>1000000</ins></span>
                                                     </div>
-                                                </div>
-                                            </div>
-                                            <div class="product-additional__top-right">
-                                                <div class="product-item-btns">
 
+                                                    <div class="product-price">
 
-                                                    <div class="product-amount">
-                                                        <div class="amount-title">Количество<span>:</span></div>
-                                                        <div class="shop2-product-amount">
-                                                            <button type="button" class="amount-minus">
-                                                                <svg class="gr-svg-icon">
-                                                                    <use xlink:href="#icon_shop_minus"></use>
-                                                                </svg>
-                                                                <svg class="gr-svg-icon gr_small_icon">
-                                                                    <use xlink:href="#icon_shop_minus_small"></use>
-                                                                </svg>
-                                                            </button>
-                                                            <input type="text" name="amount" data-kind="109590002"
-                                                                   data-min="1" data-multiplicity="" maxlength="4"
-                                                                   value="1"/>
-                                                            <button type="button" class="amount-plus">
-                                                                <svg class="gr-svg-icon">
-                                                                    <use xlink:href="#icon_shop_plus"></use>
-                                                                </svg>
-                                                                <svg class="gr-svg-icon gr_small_icon">
-                                                                    <use xlink:href="#icon_shop_plus_small"></use>
-                                                                </svg>
-                                                            </button>
+                                                        <div class="price-current">
+                                                            <strong>{{ product.price }}</strong>
+                                                            <span>сўм</span>
                                                         </div>
                                                     </div>
+                                                </div>
+                                                <div class="product-additional__top-right">
+                                                    <div class="product-item-btns">
 
 
-                                                    <button class="shop-product-btn type-2 buy" type="submit"
-                                                            data-url="/magazin/product/air-wick-aerozol-osvezhitel-vozduha-shvejcarskie-alpy-utrennyaya-rosa-i-zelenyj-les-290-ml">
-			<span>
+                                                        <div class="product-amount">
+                                                            <div class="amount-title">Количество<span>:</span></div>
+                                                            <div class="shop2-product-amount">
+                                                                <button type="button" class="amount-minus">
+                                                                    <svg class="gr-svg-icon">
+                                                                        <use xlink:href="#icon_shop_minus"></use>
+                                                                    </svg>
+                                                                    <svg class="gr-svg-icon gr_small_icon">
+                                                                        <use xlink:href="#icon_shop_minus_small"></use>
+                                                                    </svg>
+                                                                </button>
+                                                                <input type="text" name="amount" data-kind="109590002"
+                                                                       data-min="1" data-multiplicity="" maxlength="4"
+                                                                       value="1"/>
+                                                                <button type="button" class="amount-plus">
+                                                                    <svg class="gr-svg-icon">
+                                                                        <use xlink:href="#icon_shop_plus"></use>
+                                                                    </svg>
+                                                                    <svg class="gr-svg-icon gr_small_icon">
+                                                                        <use xlink:href="#icon_shop_plus_small"></use>
+                                                                    </svg>
+                                                                </button>
+                                                            </div>
+                                                        </div>
+
+
+                                                        <button class="shop-product-btn type-2 buy" type="submit"
+                                                                data-url="">
+<span>
+
 									В корзину
-					<i>
+					
+    
+    <i>
 						<svg class="gr-svg-icon gr_big_icon">
 						    <use xlink:href="#icon_shop_cart_add_big"></use>
 						</svg>
@@ -2493,44 +2496,44 @@
 						</svg>
 					</i>
 							</span>
-                                                    </button>
+                                                        </button>
 
-                                                    <input type="hidden"
-                                                           value="Air Wick Аэрозоль-освежитель воздуха Швейцарские Альпы Утренняя роса и Зеленый лес, 290 мл"
-                                                           name="product_name" data-product-folder-id="144249905"/>
-                                                    <input type="hidden"
-                                                           value="https://markermarket.uz/magazin/product/air-wick-aerozol-osvezhitel-vozduha-shvejcarskie-alpy-utrennyaya-rosa-i-zelenyj-les-290-ml"
-                                                           name="product_link"/>
-                                                    <div class="clear">&nbsp;</div>
+                                                        <input type="hidden"
+                                                               value="Air Wick Аэрозоль-освежитель воздуха Швейцарские Альпы Утренняя роса и Зеленый лес, 290 мл"
+                                                               name="product_name" data-product-folder-id="144249905"/>
+                                                        <input type="hidden"
+                                                               value="https://markermarket.uz/magazin/product/air-wick-aerozol-osvezhitel-vozduha-shvejcarskie-alpy-utrennyaya-rosa-i-zelenyj-les-290-ml"
+                                                               name="product_link"/>
+                                                        <div class="clear">&nbsp;</div>
+                                                    </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div class="product-additional__bottom">
-                                            <div class="buy-one-click buy_one_click"
-                                                 data-remodal-target="buy-one-click"
-                                                 data-product-link="https://markermarket.uz/magazin/product/air-wick-aerozol-osvezhitel-vozduha-shvejcarskie-alpy-utrennyaya-rosa-i-zelenyj-les-290-ml"
-                                                 data-product-name="Air Wick Аэрозоль-освежитель воздуха Швейцарские Альпы Утренняя роса и Зеленый лес, 290 мл"
-                                                 data-api-url="/my/s3/xapi/public/?method=form/postform&param[form_id]=21634105&param[tpl]=global:shop2.form.minimal.tpl&param[hide_title]=0&param[placeholdered_fields]=0">
-                                                Купить в 1 клик
-                                            </div>
-
-                                            <div class="product-additional__add">
-
-                                                <div class="product-compare">
-                                                    <label class="gr-compare-plus">
-                                                        <svg class="gr-svg-icon">
-                                                            <use xlink:href="#icon_shop_compare_add"></use>
-                                                        </svg>
-                                                        <svg class="gr-svg-icon gr_small_icon">
-                                                            <use xlink:href="#icon_shop_compare_add_small"></use>
-                                                        </svg>
-                                                        <input type="checkbox" value="109590002"/>
-                                                        К сравнению
-                                                    </label>
+                                            <div class="product-additional__bottom">
+                                                <div class="buy-one-click buy_one_click"
+                                                     data-remodal-target="buy-one-click"
+                                                     data-product-link="https://markermarket.uz/magazin/product/air-wick-aerozol-osvezhitel-vozduha-shvejcarskie-alpy-utrennyaya-rosa-i-zelenyj-les-290-ml"
+                                                     data-product-name="Air Wick Аэрозоль-освежитель воздуха Швейцарские Альпы Утренняя роса и Зеленый лес, 290 мл"
+                                                     data-api-url="/my/s3/xapi/public/?method=form/postform&param[form_id]=21634105&param[tpl]=global:shop2.form.minimal.tpl&param[hide_title]=0&param[placeholdered_fields]=0">
+                                                    Купить в 1 клик
                                                 </div>
 
-                                                <div class="gr-favorite-btn-wrapper">
-                                                    <label class="gr-favorite-btn">
+                                                <div class="product-additional__add">
+
+                                                    <div class="product-compare">
+                                                        <label class="gr-compare-plus">
+                                                            <svg class="gr-svg-icon">
+                                                                <use xlink:href="#icon_shop_compare_add"></use>
+                                                            </svg>
+                                                            <svg class="gr-svg-icon gr_small_icon">
+                                                                <use xlink:href="#icon_shop_compare_add_small"></use>
+                                                            </svg>
+                                                            <input type="checkbox" value="109590002"/>
+                                                            К сравнению
+                                                        </label>
+                                                    </div>
+
+                                                    <div class="gr-favorite-btn-wrapper">
+                                                        <label class="gr-favorite-btn">
 			<span class="gr-favorite-btn__icon">
 				<i class="gr-favorite-btn__add">
 					<svg class="gr-svg-icon">
@@ -2549,20 +2552,23 @@
 					</svg>
 				</i>
 			</span>
-                                                        <span class="gr-favorite-btn__text">В избранное</span>
-                                                    </label>
+                                                            <span class="gr-favorite-btn__text">В избранное</span>
+                                                        </label>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
 
+                                    </div>
                                 </div>
+
+
                             </div>
 
+                        </form>
 
-                        </div>
+                    {% endfor %}
 
-                    </form>
 
                 </div>
 

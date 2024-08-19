@@ -18,6 +18,7 @@ class ProductImageStackedInline(StackedInline):
 class ProductModelAdmin(ModelAdmin):
     list_display = ('id', 'name', 'category_id')
     inlines = [ProductImageStackedInline]
+    exclude = ('slug','id',)
 
 
 @register(Tag)

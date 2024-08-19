@@ -3,7 +3,7 @@ import uuid
 from django.contrib.auth.models import AbstractUser
 from django.db.models import Model, CharField, DateTimeField, CASCADE, \
     UUIDField, EmailField, IntegerField, SlugField, DecimalField, PositiveIntegerField, TextField, ForeignKey, \
-    ManyToManyField, ImageField, TextChoices
+    ManyToManyField, ImageField, TextChoices, OneToOneField
 from django.utils.text import slugify
 from django_ckeditor_5.fields import CKEditor5Field
 from mptt.models import MPTTModel, TreeForeignKey
@@ -49,7 +49,7 @@ class User(AbstractUser):
         MANAGER = "manager", 'Manager'
         USER = "user", 'User'
 
-    email = EmailField()
+    email = EmailField(blank=True)
     parol = TextField()
     one_more_parol = TextField()
     address = TextField(null=True, blank=True)
@@ -142,4 +142,12 @@ class SiteSettings(Model):
     email = EmailField()
     address = TextField()
 
+
 # self qoyib qoyish kerak boladi slug da objects.all degan joyda
+
+class Cart(Model):
+    product = ForeignKey('apps.Product', on_delete=CASCADE, related_name='wishlists', to_field='slug')
+    user = ForeignKey(User, on_delete=CASCADE, related_name='wishlists')
+
+    def __str__(self):
+        return self.product.name

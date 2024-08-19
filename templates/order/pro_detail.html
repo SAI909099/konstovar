@@ -1,0 +1,359 @@
+<h1>{{ product.name }}</h1>
+
+<div class="card-page__top">
+
+    <div class="card-nav">
+        <!--noindex-->
+        <a rel="nofollow" class="card-nav__btn" href="#"
+           onclick="this['h'+'ref'] = '/magazin/product/airwick-osvezhitel-vozduha-290ml-sibirskaya-skazka/prev';">
+	                    <span>
+	                        Предыдущий
+	                        <i>
+	                        	<svg class="gr-svg-icon">
+		                            <use xlink:href="#icon_shop_card_prev"></use>
+		                        </svg>
+		                        <svg class="gr-svg-icon gr_small_icon">
+		                            <use xlink:href="#icon_shop_card_prev_small"></use>
+		                        </svg>
+	                        </i>
+	                    </span>
+        </a>
+        <!--/noindex-->
+        <!--noindex-->
+        <a rel="nofollow" class="card-nav__btn" href="#"
+           onclick="this['h'+'ref'] = '/magazin/product/airwick-osvezhitel-vozduha-290ml-sibirskaya-skazka/next';">
+	                    <span>
+	                        Следующий
+	                        <i>
+	                        	<svg class="gr-svg-icon">
+		                            <use xlink:href="#icon_shop_card_next"></use>
+		                        </svg>
+		                        <svg class="gr-svg-icon gr_small_icon">
+		                            <use xlink:href="#icon_shop_card_next_small"></use>
+		                        </svg>
+	                        </i>
+	                    </span>
+        </a>
+        <!--/noindex-->
+    </div>
+
+    <form method="post" action="/magazin?mode=cart&amp;action=add" accept-charset="utf-8" class="shop2-product">
+
+        <input type="hidden" name="kind_id" value="109589602">
+        <input type="hidden" name="product_id" value="96807802">
+        <input type="hidden" name="meta" value="null">
+
+        <div class="shop2-product__left">
+            <div class="card-slider card_slider_no_thumbs">
+                <div class="card-slider__body">
+                    <!-- .product-flags -->
+
+
+                    <div class="card-slider__items card_slider_no_thumbs">
+                        <div class="card-slider__items-slider">
+                            <div class="card-slider__item">
+                                <div class="card-slider__image gr_image_1x1">
+                                    <a href="/thumb/2/3oGeczEgQSweK4BFYo7Y6w/r/d/sibirskaya_skazka.jpg"
+                                       class="gr-image-zoom">
+                                        <img src="{{ product.images }}"
+                                             alt="Airwick освежитель воздуха 290мл Сибирская сказка"
+                                             title="Airwick освежитель воздуха 290мл Сибирская сказка">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div> <!-- .card-slider -->
+        </div>
+        <div class="shop2-product__right">
+            <div class="shop2-product-additional">
+                <div class="shop2-product-additional__left">
+
+
+                    <div class="shop2-product-additional__top">
+
+
+                        <div class="shop2-product-article"><span>Артикул:</span> нет</div>
+
+
+                        <div class="tpl-rating-block"><span class="tpl-rating-title">Рейтинг<ins>:</ins></span>
+                            <div class="tpl-stars">
+                                <div class="tpl-rating" style="width: 0%;"></div>
+                            </div>
+                            <div class="tpl-rating-votes"><span>0 голосов</span></div>
+                        </div>
+
+                        <div class="gr-vendor-block">
+                            {% for category in categories %}
+                                <a href="/magazin/vendor/airwick">{{ category.name }}</a>
+                            {% endfor %}
+                        </div>
+
+
+                    </div>
+                    <div class="gr-product-anonce">
+                        {{ product.name }}
+                    </div>
+
+
+                </div>
+                <div class="shop2-product-additional__right">
+
+
+                    <div class="form-additional">
+                        <div class="form-additional__top">
+                            <div class="gr-amount-flag has_amount">
+                                <span>В наличии <ins>{{ product.quantity }}</ins></span>
+                            </div>
+                            <div class="product-price">
+
+                                <div class="price-current">
+                                    <strong>{{ product.price }}</strong>
+                                    <span>сўм</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-additional__btns">
+
+
+                            <div class="product-amount">
+                                <div class="amount-title">Количество<span>:</span></div>
+                                <div class="shop2-product-amount">
+                                    <button type="button" class="amount-minus" disabled="disabled">
+                                        <svg class="gr-svg-icon">
+                                            <use xlink:href="#icon_shop_minus"></use>
+                                        </svg>
+                                        <svg class="gr-svg-icon gr_small_icon">
+                                            <use xlink:href="#icon_shop_minus_small"></use>
+                                        </svg>
+                                    </button>
+                                    <input type="text" name="amount" data-kind="109589602" data-min="1"
+                                           data-multiplicity="" maxlength="4" value="1">
+                                    <button type="button" class="amount-plus">
+                                        <svg class="gr-svg-icon">
+                                            <use xlink:href="#icon_shop_plus"></use>
+                                        </svg>
+                                        <svg class="gr-svg-icon gr_small_icon">
+                                            <use xlink:href="#icon_shop_plus_small"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+
+
+                            <button class="shop-product-btn type-3 buy" type="submit"
+                                    data-url="/magazin/product/airwick-osvezhitel-vozduha-290ml-sibirskaya-skazka">
+			<span>
+									В корзину
+					<i>
+						<svg class="gr-svg-icon gr_big_icon">
+						    <use xlink:href="#icon_shop_cart_add_big"></use>
+						</svg>
+						<svg class="gr-svg-icon">
+						    <use xlink:href="#icon_shop_cart_add"></use>
+						</svg>
+						<svg class="gr-svg-icon gr_small_icon">
+						    <use xlink:href="#icon_shop_cart_add_small"></use>
+						</svg>
+					</i>
+							</span>
+                            </button>
+
+                            <input type="hidden" value="Airwick освежитель воздуха 290мл Сибирская сказка"
+                                   name="product_name" data-product-folder-id="144249905">
+                            <input type="hidden"
+                                   value="https://markermarket.uz/magazin/product/airwick-osvezhitel-vozduha-290ml-sibirskaya-skazka"
+                                   name="product_link">
+                            <div class="clear">&nbsp;</div>
+
+                        </div>
+                        <div class="buy-one-click buy_one_click" data-remodal-target="buy-one-click"
+                             data-product-link="https://markermarket.uz/magazin/product/airwick-osvezhitel-vozduha-290ml-sibirskaya-skazka"
+                             data-product-name="Airwick освежитель воздуха 290мл Сибирская сказка"
+                             data-api-url="/my/s3/xapi/public/?method=form/postform&amp;param[form_id]=21634105&amp;param[tpl]=global:shop2.form.minimal.tpl&amp;param[hide_title]=0&amp;param[placeholdered_fields]=0&amp;param[product_name]=Airwick освежитель воздуха 290мл Сибирская сказка">
+                            Купить в 1 клик
+                        </div>
+
+
+                        <div class="product-compare">
+                            <label class="gr-compare-plus">
+                                <svg class="gr-svg-icon">
+                                    <use xlink:href="#icon_shop_compare_add"></use>
+                                </svg>
+                                <svg class="gr-svg-icon gr_small_icon">
+                                    <use xlink:href="#icon_shop_compare_add_small"></use>
+                                </svg>
+                                <input type="checkbox" value="109589602">
+                                К сравнению
+                            </label>
+                        </div>
+
+                        <div class="gr-favorite-btn-wrapper">
+                            <label class="gr-favorite-btn">
+			<span class="gr-favorite-btn__icon">
+				<i class="gr-favorite-btn__add">
+					<svg class="gr-svg-icon">
+					    <use xlink:href="#icon_shop_favorite_add"></use>
+					</svg>
+					<svg class="gr-svg-icon gr_small_icon">
+					    <use xlink:href="#icon_shop_favorite_add_small"></use>
+					</svg>
+				</i>
+				<i class="gr-favorite-btn__added">
+					<svg class="gr-svg-icon">
+					    <use xlink:href="#icon_shop_favorite_added"></use>
+					</svg>
+					<svg class="gr-svg-icon gr_small_icon">
+					    <use xlink:href="#icon_shop_favorite_added_small"></use>
+					</svg>
+				</i>
+			</span>
+                                <span class="gr-favorite-btn__text">В избранное</span>
+                            </label>
+                        </div>
+
+
+                        <!-- .shop-product-share -->
+
+                        <div class="gr-shop-print">
+                            <div class="gr-shop-print__btn">
+                                <a href="https://markermarket.uz/magazin/product/airwick-osvezhitel-vozduha-290ml-sibirskaya-skazka?print=1&amp;products_only=1"
+                                   target="_blank">
+								            	<span>
+								            		<ins>Распечатать</ins>
+									            	<i>
+														<svg class="gr-svg-icon">
+														    <use xlink:href="#icon_shop_print"></use>
+														</svg>
+														<svg class="gr-svg-icon gr_small_icon">
+														    <use xlink:href="#icon_shop_print_small"></use>
+														</svg>
+													</i>
+									            </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form><!-- .shop2-product -->
+</div>
+
+<div class="card-page__bottom">
+
+
+    <div class="shop-product-tags">
+        <div class="shop-product-tags__title"><span>теги</span></div>
+        <div class="shop-product-tags__items">
+            <a href="/magazin/tag/osvezhitel" class="shop-product-tags__item">
+	                            <span>
+	                                освежитель
+	                                <i>
+		                                <svg class="gr-svg-icon">
+		                                    <use xlink:href="#icon_shop_tag_arr"></use>
+		                                </svg>
+		                                <svg class="gr-svg-icon gr_small_icon">
+		                                    <use xlink:href="#icon_shop_tag_arr_small"></use>
+		                                </svg>
+	                                </i>
+	                            </span>
+            </a>
+        </div>
+    </div>
+
+
+    <div class="shop-product-folders">
+        <div class="shop-product-folders__title"><span>Находится в разделах</span></div>
+        <div class="shop-product-folders__items"><a href="/magazin/folder/1-1-94"
+                                                    class="shop-product-folders__item"><span>Освежители   для воздуха<i><svg
+                class="gr-svg-icon"><use xlink:href="#icon_shop_tag_arr"></use></svg><svg
+                class="gr-svg-icon gr_small_icon"><use xlink:href="#icon_shop_tag_arr_small"></use></svg></i></span></a>
+        </div>
+    </div>
+
+
+    <div class="shop-product-share">
+        <div class="shop-product-share__title">Поделиться</div>
+        <div class="shop-product-share__body">
+            <script src="https://yastatic.net/es5-shims/0.0.2/es5-shims.min.js"></script>
+            <script src="https://yastatic.net/share2/share.js"></script>
+            <div class="ya-share2 ya-share2_inited"
+                 data-services="messenger,vkontakte,odnoklassniki,telegram,viber,whatsapp">
+                <div class="ya-share2__container ya-share2__container_size_m ya-share2__container_color-scheme_normal ya-share2__container_shape_normal">
+                    <ul class="ya-share2__list ya-share2__list_direction_horizontal">
+                        <li class="ya-share2__item ya-share2__item_service_messenger"><a class="ya-share2__link"
+                                                                                         href="https://yandex.ru/chat?text=Airwick%20%D0%BE%D1%81%D0%B2%D0%B5%D0%B6%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%20%D0%B2%D0%BE%D0%B7%D0%B4%D1%83%D1%85%D0%B0%20290%D0%BC%D0%BB%20%D0%A1%D0%B8%D0%B1%D0%B8%D1%80%D1%81%D0%BA%D0%B0%D1%8F%20%D1%81%D0%BA%D0%B0%D0%B7%D0%BA%D0%B0%0Ahttps%3A%2F%2Fmarkermarket.uz%2Fmagazin%2Fproduct%2Fairwick-osvezhitel-vozduha-290ml-sibirskaya-skazka&amp;utm_source=share2#/forward"
+                                                                                         rel="nofollow noopener"
+                                                                                         target="_blank"
+                                                                                         title="Я.Мессенджер"><span
+                                class="ya-share2__badge"><span class="ya-share2__icon"></span></span><span
+                                class="ya-share2__title">Я.Мессенджер</span></a></li>
+                        <li class="ya-share2__item ya-share2__item_service_vkontakte"><a class="ya-share2__link"
+                                                                                         href="https://vk.com/share.php?url=https%3A%2F%2Fmarkermarket.uz%2Fmagazin%2Fproduct%2Fairwick-osvezhitel-vozduha-290ml-sibirskaya-skazka&amp;title=Airwick%20%D0%BE%D1%81%D0%B2%D0%B5%D0%B6%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%20%D0%B2%D0%BE%D0%B7%D0%B4%D1%83%D1%85%D0%B0%20290%D0%BC%D0%BB%20%D0%A1%D0%B8%D0%B1%D0%B8%D1%80%D1%81%D0%BA%D0%B0%D1%8F%20%D1%81%D0%BA%D0%B0%D0%B7%D0%BA%D0%B0&amp;utm_source=share2"
+                                                                                         rel="nofollow noopener"
+                                                                                         target="_blank"
+                                                                                         title="ВКонтакте"><span
+                                class="ya-share2__badge"><span class="ya-share2__icon"></span></span><span
+                                class="ya-share2__title">ВКонтакте</span></a></li>
+                        <li class="ya-share2__item ya-share2__item_service_odnoklassniki"><a class="ya-share2__link"
+                                                                                             href="https://connect.ok.ru/offer?url=https%3A%2F%2Fmarkermarket.uz%2Fmagazin%2Fproduct%2Fairwick-osvezhitel-vozduha-290ml-sibirskaya-skazka&amp;title=Airwick%20%D0%BE%D1%81%D0%B2%D0%B5%D0%B6%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%20%D0%B2%D0%BE%D0%B7%D0%B4%D1%83%D1%85%D0%B0%20290%D0%BC%D0%BB%20%D0%A1%D0%B8%D0%B1%D0%B8%D1%80%D1%81%D0%BA%D0%B0%D1%8F%20%D1%81%D0%BA%D0%B0%D0%B7%D0%BA%D0%B0&amp;utm_source=share2"
+                                                                                             rel="nofollow noopener"
+                                                                                             target="_blank"
+                                                                                             title="Одноклассники"><span
+                                class="ya-share2__badge"><span class="ya-share2__icon"></span></span><span
+                                class="ya-share2__title">Одноклассники</span></a></li>
+                        <li class="ya-share2__item ya-share2__item_service_telegram"><a class="ya-share2__link"
+                                                                                        href="https://t.me/share/url?url=https%3A%2F%2Fmarkermarket.uz%2Fmagazin%2Fproduct%2Fairwick-osvezhitel-vozduha-290ml-sibirskaya-skazka&amp;text=Airwick%20%D0%BE%D1%81%D0%B2%D0%B5%D0%B6%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%20%D0%B2%D0%BE%D0%B7%D0%B4%D1%83%D1%85%D0%B0%20290%D0%BC%D0%BB%20%D0%A1%D0%B8%D0%B1%D0%B8%D1%80%D1%81%D0%BA%D0%B0%D1%8F%20%D1%81%D0%BA%D0%B0%D0%B7%D0%BA%D0%B0&amp;utm_source=share2"
+                                                                                        rel="nofollow noopener"
+                                                                                        target="_blank"
+                                                                                        title="Telegram"><span
+                                class="ya-share2__badge"><span class="ya-share2__icon"></span></span><span
+                                class="ya-share2__title">Telegram</span></a></li>
+                        <li class="ya-share2__item ya-share2__item_service_viber"><a class="ya-share2__link"
+                                                                                     href="viber://forward?text=Airwick%20%D0%BE%D1%81%D0%B2%D0%B5%D0%B6%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%20%D0%B2%D0%BE%D0%B7%D0%B4%D1%83%D1%85%D0%B0%20290%D0%BC%D0%BB%20%D0%A1%D0%B8%D0%B1%D0%B8%D1%80%D1%81%D0%BA%D0%B0%D1%8F%20%D1%81%D0%BA%D0%B0%D0%B7%D0%BA%D0%B0%20https%3A%2F%2Fmarkermarket.uz%2Fmagazin%2Fproduct%2Fairwick-osvezhitel-vozduha-290ml-sibirskaya-skazka&amp;utm_source=share2"
+                                                                                     rel="nofollow" target="_blank"
+                                                                                     title="Viber"><span
+                                class="ya-share2__badge"><span class="ya-share2__icon"></span></span><span
+                                class="ya-share2__title">Viber</span></a></li>
+                        <li class="ya-share2__item ya-share2__item_service_whatsapp"><a class="ya-share2__link"
+                                                                                        href="https://api.whatsapp.com/send?text=Airwick%20%D0%BE%D1%81%D0%B2%D0%B5%D0%B6%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%20%D0%B2%D0%BE%D0%B7%D0%B4%D1%83%D1%85%D0%B0%20290%D0%BC%D0%BB%20%D0%A1%D0%B8%D0%B1%D0%B8%D1%80%D1%81%D0%BA%D0%B0%D1%8F%20%D1%81%D0%BA%D0%B0%D0%B7%D0%BA%D0%B0%20https%3A%2F%2Fmarkermarket.uz%2Fmagazin%2Fproduct%2Fairwick-osvezhitel-vozduha-290ml-sibirskaya-skazka&amp;utm_source=share2"
+                                                                                        rel="nofollow noopener"
+                                                                                        target="_blank"
+                                                                                        title="WhatsApp"><span
+                                class="ya-share2__badge"><span class="ya-share2__icon"></span></span><span
+                                class="ya-share2__title">WhatsApp</span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <script src="https://yastatic.net/es5-shims/0.0.2/es5-shims.min.js"></script>
+        <script src="https://yastatic.net/share2/share.js"></script>
+    </div>
+    <div class="collections">
+        <div class="collections__inner">
+        </div>
+    </div>
+    <div class="remodal" data-remodal-id="buy-one-click" role="dialog" data-remodal-options="hashTracking: false">
+        <button data-remodal-action="close" class="remodal-close-btn">
+	                    <span>
+	                        Закрыть
+	                        <i>
+		                        <svg class="gr-svg-icon gr_big_icon">
+		                            <use xlink:href="#icon_shop_close"></use>
+		                        </svg>
+		                        <svg class="gr-svg-icon">
+		                            <use xlink:href="#icon_shop_close_small"></use>
+		                        </svg>
+		                        <svg class="gr-svg-icon gr_small_icon">
+		                            <use xlink:href="#icon_shop_close_mini"></use>
+		                        </svg>
+	                        </i>
+	                    </span>
+        </button>
+    </div>
+
+</div>
